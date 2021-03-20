@@ -1,0 +1,174 @@
+html {
+	font-family: Times New Roman; /* font family of HTML document */
+	margin-left: 15%; /* left margin 15% of webpage width */
+	margin-right: 15%; /* right margin 15% of webpage width */
+	background-color: #858585; /* website background colour */
+}
+
+header {
+	font-size: 20pt; /* font size of header/h1 text */
+	color: #000000; /* black font colour */
+	text-shadow: 2px 3px 8px #000000; /* offset x axis by 2 pixels, offsets y axis 3 by pixels, 8-pixel blur radius & black shadow colour */
+	border: 3px solid black; /* 3-pixel black border around header */
+	padding: 30px 0px 60px 0px; /* top, right, bottom & left spacing between header text & margin */
+	margin-bottom: 5px; /* bottom spacing after header margin */
+	text-align: center; /* positions header text in centre */
+    background-color: #FFFFFF;  /* header background colour */
+}
+
+nav {
+	font-size: 14pt; /* font size of nav text */
+	background-color:#FFFFFF; /* colour of nav background */
+	border: 3px solid black; /* 3-pixel black border around nav */
+	margin-bottom: 5px; /* bottom spacing after nav margin */
+}
+
+nav ul {
+	list-style-type: none; /* removes bullet points in nav */ 
+	overflow: hidden;
+	padding: 0px 10px; /* top, bottom & left, right spacing between nav & its margin */
+}
+
+nav li {
+	padding: 5px 10px; /* top, bottom & left, right spacing between nav text & their margins */
+	margin: 5px 10px; /* top, bottom & left, right spacing between each nav button */
+	float: left; /* displays nav horizontally */
+	border: 2px solid black; /* 2-pixel black border around each nav button */
+	border-radius: 15px; /* rounded-corners for each nav button */
+	box-shadow: 5px 5px 12px #000000; /* offset x & y axes by 5 pixels, 12-pixel blur radius & black shadow colour */
+	background-color: #858585 /* nav buttons background colour */
+}
+
+nav li:hover {
+    background-color: #000000; /* when hovering over nav buttons, background colour becomes black */
+}
+
+nav a {
+	text-decoration: none; /* removes nav buttons' underlines */
+	color: #FFFFFF; /* white font colour */
+}
+	
+#About, #Web, #Prog, #CSF, #IS, #WorkExp, #PersoDev, #Career, #Gallery {
+	font-size: 10pt; /* font size of text in named articles */
+	border: 3px solid black; /* 3-pixel black border around named articles */
+	background-color:#FFFFFF; /* background colour of named articles */
+	padding: 0px 10px 10px 10px; /* top, right, bottom & left spacing between articles' text & margin */
+	margin-bottom: 5px; /* bottom spacing after articles' margins */
+}
+
+#About p, #Web p, #Prog p, #CSF p, #IS p, #WorkExp p, #Career p, #Gallery p {
+	font-size: 12pt; /* font size of text in paragraphs in named articles */
+	padding-left: 10px; /* left spacing between articles' paragraphs text & margin */
+	line-height: 17pt; /* paragraph text line spacing */
+}
+
+#About table {
+	font-size: 12pt; /* font size of text in "About" article table */
+	margin: 0px 0.5% 20px 10px; /* top, right, bottom & left spacing after table's margin */
+	border: 3px solid black; /* 3-pixel black border around table */
+	float: left; /* table positioned left of its container */
+	width: 48%; /* width of table 48% of website width */
+	min-width: 375px; /* minimum allowed table width */ 
+}
+
+#About th, td {
+	text-align: center; /* table text positioned in centre of their cell */
+	padding: 5px 0px; /* top & bottom, left & right spacing between table's text & margin */
+}
+
+#Qualification {
+	width: 80px; /* width of the "Qualification" column */
+}
+
+#Subject {
+	width: 100px; /* width of the "Subject" column */
+}
+
+#Year, #Grade {
+	width: 70px; /* width of the "Year" & "Grade" column */
+}
+
+#About tr:hover, #PersoDev tr:hover {
+	background-color: yellow; /* when hovering over table row, background colour becomes yellow */
+}
+
+iframe {
+	float: left; /* iframe positioned right of its container */
+	border: 3px solid black; /* 3-pixel black border around table */
+	margin: 0px 10px 20px 0.5%; /* top, right, bottom & left spacing after iframe's margin */
+	width: 48%; /* width of iframe 48% of website width */
+}
+
+#About img, #Web img, #Prog img, #CSF img, #IS img, #WorkExp img {
+	float: right; /* named articles' images positioned right of their containers */
+	margin: 0px 10px; /* top & bottom, left & right spacing after images' margins */
+	border: 3px solid black; /* 3-pixel black border around table */
+	transition-delay: 0.5s; /* 0.5 second delay after hover occurs */
+	transition: transform 5s; /* 5 second duration of transform element */
+}
+
+#Web img:hover, #Prog img:hover, #CSF img:hover, #IS img:hover, #WorkExp img:hover {
+	transform: rotateX(360deg); /* when hovering, named articles' images rotate on x-axis 360 degrees */
+}
+
+#About img:hover {
+	transform: rotateY(720deg); /* when hovering, named article's image rotates on y-axis 720 degrees */
+}
+
+#Web ul, #Prog ul, #CSF ul, #IS ul {
+	font-size: 12pt; /* font size of text in named articles' unordered lists */
+	padding-left: 40px; /* left spacing between unordered lists 'text & margin */
+	line-height: 17pt; /* unordered list text line spacing */
+}
+
+#PersoDev table {
+	margin: 0px 10px 20px 10px; /* top, right, bottom & left spacing after table's margin */
+	border: 3px solid black; /* 3-pixel black border around table */
+	width: 97.5%; /* width of iframe 97.5% of website width */
+}
+
+#PersoDev th {
+	font-size: 12pt; /* font size of table's header text */
+	text-align: center; /* table header text positioned in centre of the cell */
+	padding: 10px; /* top, left, bottom & right spacing between table's text & margin */
+}
+
+#Criteria {
+	font-size: 11pt; /* font size of "Criteria" column's text */
+	text-align: center; /* "Criteria" column's text positioned centre of the cell */
+	width: 130px; /* width of "Criteria" column set at 115-pixels. */
+	line-height: 16pt; /* "Criteria" column's text line spacing */
+}
+
+#Rating {
+	font-size: 25pt; /* font size of "Rating" column's text */
+	text-align: center; /* "Rating" column's text positioned centre of the cell */
+	width: 120px; /* width of "Rating" column set at 93-pixels. */
+	line-height: 16pt; /* "Rating" column's text line spacing */
+}
+
+#Explanation {
+	font-size: 11pt; /* font size of "Explanation" column's text */
+	text-align: left; /* "Explanation" column's text positioned left of the cell */
+	line-height: 16pt; /* "Explanation" column's text line spacing */
+	padding: 7.5px 10px; /* top & bottom, left & right spacing between table's text & margin */
+}
+
+#Gallery img, #Gallery video {
+	margin: 1px 1px; /* top & bottom, left & right spacing after images' margins */
+	border: 3px solid black; /* 3-pixel black border around images & video */
+	transition-delay: 0.5s; /* 0.5 second delay after hover occurs */
+	transition: transform 1s; /* 1 second duration of transform element */
+}
+
+#Gallery img:hover, #Gallery video:hover {
+	transform: scale(1.75, 1.75); /* when hovering, images' & video's size is scaled-up 1.75x */
+}
+
+footer {
+	font-size: 12pt; /* font size of text in footer */
+	margin-bottom: 20px; /* bottom spacing after footer's margin */
+	border: 3px solid black; /* 3-pixel black border around table */
+	background-color: #FFFFFF; /* background colour of footer */
+	text-align: center; /* text within footer positioned in centre */
+}
